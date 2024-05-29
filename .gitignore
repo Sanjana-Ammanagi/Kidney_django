@@ -1,0 +1,23 @@
+# .gitignore
+env/
+*.pyc
+__pycache__/
+db.sqlite3
+.DS_Store
+*.log
+*.pot
+*.pyc
+*.so
+*.swp
+*.tmp
+*.zip
+*.egg
+*.egg-info
+*.bak
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+*.idea
+.vscode
+*.iml
