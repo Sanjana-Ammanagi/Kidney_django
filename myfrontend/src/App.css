@@ -1,0 +1,93 @@
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.App-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: linear-gradient(to right, #b5dce7, #578bcc); 
+  color: white;
+  text-align: center;
+}
+.hospital{
+  text-align: center;
+  padding-left: 30px;
+}
+
+.App-logo {
+  height: 50px; 
+  margin-left: 20px; 
+}
+.upload-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.upload-template label {
+  display: block;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+
+}
+#ini{
+  text-align: center;
+  display: flex;
+  padding: auto;
+}
+.upload-template input[type="file"] {
+  margin-bottom: 10px;
+ padding: 20px;
+ text-align: center;
+ padding-left: 30%;
+justify-content: center;
+display: flex;
+font-weight: bold;
+}
+
+button {
+  background-color: #1d487c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.result-card {
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+}
