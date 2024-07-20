@@ -25,24 +25,24 @@ model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(), metri
 # print(model.evaluate(img, l0))
 def process_image_with_model(file_path):
     try:
-        # Open and preprocess the image
-        im = Image.open(file_path)
+       
+        im = Image.open(file_path)  
         newsize = (128, 128)
         im = im.resize(newsize)
         img = np.asarray(im)
         img = np.expand_dims(img, axis=0)
         
-        # Predict using the model
+        
         prediction = model.predict(img)
         
-        # Convert prediction to "yes" or "no" based on threshold
-        threshold = 0.5  # Adjust this threshold based on your model's characteristics
+        
+        threshold = 0.5  
         if prediction[0][0] >= threshold:
             result = {"prediction": "yes"}
         else:
             result = {"prediction": "no"}
         
-        # Delete the file after processing
+        
         os.remove(file_path)
         
         return result

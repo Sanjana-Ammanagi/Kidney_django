@@ -15,7 +15,7 @@ from src.cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipe
 #     raise e
 
 
-STAGE_NAME = "Prepare base model"
+STAGE_NAME = "PrepareBaseModel"
 
 try:
     logger.info(f">>stage {STAGE_NAME} started <<")
